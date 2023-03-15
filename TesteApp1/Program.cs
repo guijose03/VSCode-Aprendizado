@@ -4,20 +4,23 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite seu nome: ");
+            string produto1 = "Computador";
+            string produto2 = "Mesa de escritório";
+            int idade = 30;
+            int codigo = 1279;
+            char genero = 'M';
+            double preco1 = 102.87;
+            double preco2 = 15.78;
+            double medida = 52.92891;
 
-            string nome = Console.ReadLine();
-
-            Console.WriteLine("Digite sua idade: ");
-
-            int idade = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Seu nome é "+nome);
-            Console.WriteLine("Você tem " + idade + " anos");
-
-            double saldo = 10.897;
-
-            Console.WriteLine($"{nome} tem {idade} e um saldo bancario de {saldo:F2}");
+            Console.WriteLine("Produtos: ");
+            Console.WriteLine($"{produto1} cujo preço é {preco1}");
+            Console.WriteLine($"{produto2} cujo preço é {preco2}");
+            Console.WriteLine();
+            Console.WriteLine($"Registro {idade} anos de idade, código {codigo}, e o gênero é: {genero}");
+            Console.WriteLine();
+            Console.WriteLine($"Medida com 8 casas decimais: {medida:F8}");
+            Console.WriteLine($"Medida arredondada {medida:F3}");
         }
     }
 }
